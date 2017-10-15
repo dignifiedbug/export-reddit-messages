@@ -4,11 +4,11 @@ import praw
 # Edit these variables:
 username = "username_here"
 password = "password_here"
-client_id = 	"App_ID"
-client_secret ="App_Secret"
+client_id = "App_ID"
+client_secret = "App_Secret"
 
-
-reddit = praw.Reddit(user_agent='testscript by /u/fakebot3', # User agent
+# Program:
+reddit = praw.Reddit(user_agent='Message Exporter' v1 by /u/dignifiedbug, # User agent
 		username = username,
 		password = password,
 		client_id = client_id,
@@ -28,7 +28,7 @@ for message in inbox.messages():
 	final_output = final_output.replace('{SUBJECT}', message.subject)
 	final_output = final_output.replace('{BODY}', message.body)
 	
-	if message.author: # Returns stock name if the original author can't be found
+	if message.author: # Returns default name if the original author can't be found
 		final_output = final_output.replace('{AUTHOR}', message.author.name)
 	else:
 		final_output = final_output.replace('{AUTHOR}', 'unknown')
