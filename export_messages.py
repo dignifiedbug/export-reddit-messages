@@ -8,7 +8,7 @@ client_id = "App_ID"
 client_secret = "App_Secret"
 
 # Program:
-reddit = praw.Reddit(user_agent='Message Exporter' v1 by /u/dignifiedbug, # User agent
+reddit = praw.Reddit(user_agent='Message Exporter v1 by /u/dignifiedbug', # User agent
 		username = username,
 		password = password,
 		client_id = client_id,
