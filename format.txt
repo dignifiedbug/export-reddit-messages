@@ -1,0 +1,7 @@
+{SUBJECT}
+Sent on {DATE} by /u/{AUTHOR}
+
+{BODY}
+
+ ---------------
+
